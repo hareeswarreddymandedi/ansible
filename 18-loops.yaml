@@ -1,0 +1,12 @@
+- name: install pacakges
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install pacakges
+    package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - { name: "nginx", state: "present" }
+    - { name: "mysql", state: "absent" }
+    - { name: "zip", state: "present" }

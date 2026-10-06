@@ -1,0 +1,27 @@
+- name: "sivakumar reddy m"
+  dob: "1990-01-01"
+  mobile: "1234567890"
+  addresses:
+  - type: perm
+    street: 101
+    apartmentName: "Balaji Apartments"
+    city: "HYD"
+
+  - type: current
+    street: 101
+    apartmentName: "Balaji Apartments"
+    city: "HYD"
+
+- name: "sivakumar reddy m"
+  dob: "1990-01-01"
+  mobile: "1234567890"
+  addresses:
+  - type: perm
+    street: 101
+    apartmentName: "Balaji Apartments"
+    city: "HYD"
+
+  - type: current
+    street: 101
+    apartmentName: "Balaji Apartments"
+    city: "HYD"

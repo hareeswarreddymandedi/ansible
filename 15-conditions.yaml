@@ -1,0 +1,14 @@
+- name: conditions using ansible_facts
+  hosts: frontend
+  tasks:
+  - name: print if RedHat
+    debug:
+      msg: "OS Family is RedHat, package manager is dnf"
+    when: ansible_facts.os_family == "RedHat"
+  
+  - name: print if Debian
+    debug:
+      msg: "OS Family is Debian, package manager is apt-get"
+    when: ansible_facts.os_family == "Debian"
+
+# ansible_facts is special reserved variable

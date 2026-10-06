@@ -1,0 +1,13 @@
+- name: install pacakges
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install pacakges
+    package:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - nginx
+    - mysql
+    - mongodb-mongosh
+    - git
